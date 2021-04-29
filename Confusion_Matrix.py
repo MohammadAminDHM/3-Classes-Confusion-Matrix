@@ -26,7 +26,7 @@ actual : input's label
                         elif actual[i] == k + 1:
                             confusion_matrix[n] += 1
                         elif actual[i] == k + 2:
-                            confusion_matrix[n - 1] += 1    
+                            confusion_matrix[n + 1] += 1    
                     elif k == 1:
                         if actual[i] == k - 1:
                             confusion_matrix[n - 1] += 1
