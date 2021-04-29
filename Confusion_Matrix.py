@@ -36,11 +36,11 @@ actual : input's label
                             confusion_matrix[n + 1] += 1
                     elif k == 2:
                         if actual[i] == k:
-                            confusion_matrix[n - 1] += 1
+                            confusion_matrix[n + 1] += 1
                         elif actual[i] == k - 1:
                             confusion_matrix[n] += 1
                         elif actual[i] == k - 2:
-                            confusion_matrix[n + 1] += 1
+                            confusion_matrix[n - 1] += 1
 
             break        
     return confusion_matrix.reshape(3,3),predictions,actual 
